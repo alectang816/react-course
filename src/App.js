@@ -1,25 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import AlbumTitle from './components/AlbumTitle.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+  return <div>
+    <AlbumTitle text="DAMN." textColor="red" exists={true}></AlbumTitle>
+    <AlbumTitle text="NATION." textColor="blue" exists={false} height={120}></AlbumTitle>
+  </div>;
+};
 
 export default App;
